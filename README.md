@@ -1,11 +1,13 @@
 # Development Notes
 
 - install testing tools
+
 ```bash
 npm install -D vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom
 ```
 
 - to enable testing, in `vite.config.ts`:
+
 ```ts
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
