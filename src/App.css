@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+  position: relative;
+}
+
+nav {
+  background-color: white;
+  position: relative;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px
+}
+
+.names {
+  padding: 20px;
+}
