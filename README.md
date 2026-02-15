@@ -7,8 +7,7 @@ npm install -D vitest @testing-library/react @testing-library/jest-dom @testing-
 
 - to enable testing, in `vite.config.ts`:
 ```ts
-/// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
@@ -19,4 +18,10 @@ export default defineConfig({
     setupFiles: "./src/test/setup.ts",
   },
 });
+```
+
+- in file `src/test/setup.ts`
+
+```ts
+import "@testing-library/jest-dom";
 ```
